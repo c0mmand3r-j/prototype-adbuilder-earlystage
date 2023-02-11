@@ -1,6 +1,6 @@
-# WxCreativeTech-AD-Builder
+# CreativeTech-AD-Builder
 
-A boilerplate for building WxCreativeTech projects with [Gulp](https://gulpjs.com/). Uses Gulp 4.x.
+A boilerplate for building CreativeTech projects with [Gulp](https://gulpjs.com/). Uses Gulp 4.x. (This is a prototype)
 
 **Features**
 
@@ -98,7 +98,7 @@ module.exports = {
     PRODUCTION: deepExtend({}, __AD__,
         {
             __ENV__  : "SERVER",
-            __ROOT__ : "https://s.w-x.co/cl/",
+            __ROOT__ : "https://{BUCKET}/cl/",
             __DIR__  : "watsonads/rav4-decouple/assets/",
         }),
     TEST: deepExtend({}, __AD__,
@@ -296,7 +296,3 @@ module.exports = {
 ```
 
 
-
-## License
-
-The code is available under the [MIT License](LICENSE.md).
