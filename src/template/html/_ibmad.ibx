@@ -1,0 +1,26 @@
+<!-- START :: html/_main_js.ibx -->
+<script>
+(function () {
+'use strict';
+
+document.addEventListener('click', function (event) {
+if (!event.target.matches('#click-me')) return;
+event.preventDefault();
+confirm('Greetings professor Falken.'
++ '\n How are you feeling today?'
++ '\n Shall we play a game?'
+);
+}, false);
+
+/*-- inject:ibmad:ibx --*/
+/*-- endinject --*/
+/*-- inject:macro:ibx --*/
+/*-- endinject --*/
+
+/*-- inject:js --*/
+/*-- endinject --*/
+
+}());
+</script>
+@@jsmain
+<!-- END :: html/_main_js.ibx -->

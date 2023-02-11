@@ -1,0 +1,9 @@
+/*-- ADFORM TEMPLATE --*/
+
+$$$.DATA.macros.ADFORM = {
+    cid: '__ADFCID__', // creative id
+    lid: '__ADFPLAID__', // line item id
+    sid: '__ADFBNRDOM__',
+    lat: '__ADFLAT__'.substring(0, 5),
+    lon: '__ADFLNG__'.substring(0, 5),
+};

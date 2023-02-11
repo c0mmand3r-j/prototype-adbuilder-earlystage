@@ -1,0 +1,6 @@
+/*-- START :: js/_head.ibx --*/
+(function(window) {
+console.warn('test');
+if(typeof __AD__ == 'undefined') return;
+__AD__.__INIT = function(){
+/*-- END :: js/_head.ibx --*/

@@ -1,0 +1,15 @@
+/*-- META DATA TEMPLATE --*/
+
+$$$.DATA.meta = {
+  width      :970,
+  height     :250,
+  advertiser :'Toyota',
+  product    :'Watson Ad',
+  type       :'chat?',
+  placement  :'RAV4 Watson Ad',
+  platform   :'all',
+  created    :'08-28-2019',
+  modified    :'',
+  design     :'gs',
+  dev        :'tru'
+};

@@ -1,0 +1,91 @@
+<!-- START :: html/_header.ibx -->
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <script src="/stage/lib.js"></script>
+
+<!-- load style -->
+<style>
+/*-- inject:css --*/
+@import url('/stage/index.css');
+/*-- endinject --*/
+</style>
+
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong>
+        browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to
+        improve your experience.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+      <h1 role="banner">WxCreativeTech</h1>
+      <nav role="navigation">
+        <ul>
+          <li><a id="click-me" href="">THE-MISSING-LINK</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+<!-- END :: html/_header.ibx -->
+
+<!-- START :: html/_main.ibx -->
+
+<!-- END :: html/_main.ibx -->
+
+<!-- Place ad module markup here -->
+<p>We all live in an atomic submarine...</p>
+<!-- LOAD __AD__ -->
+<!-- inject:_main_js:ibx -->
+<!-- endinject -->
+
+<!-- START :: html/_main_js.ibx -->
+<script>
+(function () {
+'use strict';
+
+document.addEventListener('click', function (event) {
+if (!event.target.matches('#click-me')) return;
+event.preventDefault();
+confirm('Greetings professor Falken.'
++ '\n How are you feeling today?'
++ '\n Shall we play a game?'
+);
+}, false);
+
+/*-- inject:ibmad:ibx --*/
+/*-- META DATA TEMPLATE --*/
+
+
+/*-- endinject --*/
+/*-- inject:macro:ibx --*/
+/*-- ADFORM TEMPLATE --*/
+
+
+
+/*-- endinject --*/
+
+/*-- inject:js --*/
+/*-- endinject --*/
+
+}());
+</script>
+<script src="/stage/index.js"></script>
+<!-- END :: html/_main_js.ibx -->
+
+<!-- START :: html/_footer.ibx -->
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
+<!-- END :: html/_footer.ibx -->

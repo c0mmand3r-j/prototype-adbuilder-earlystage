@@ -1,0 +1,17 @@
+/**
+ * Master scss src file example
+ */
+
+/* Helpers */
+@import 'base/variables';
+@import 'base/helpers';
+
+/* Layout */
+@import 'html/_base';
+@import 'html/_header';
+@import 'html/_main';
+@import 'html/_footer';
+
+/* Typography and Elements */
+@import 'element/typography';
+@import 'component/_component';

@@ -1,0 +1,60 @@
+/**
+ * DATA <- ADVERTISING CONTRACT
+ */
+
+/** Trafficking Instructions/Notes
+***
+*** This workbook contains code required for implementing tracking ads.
+*** The code may not be valid HTML and should be implemented as specified by your ad server.
+*** Please see https://support.google.com/dcm/partner/answer/2837435 to learn more.
+***
+*** To ensure proper cache-busting, replace ' + TIMESTAMP with a dynamically generated random number.
+*** Learn more at https://support.google.com/dcm/partner/answer/2837435.
+***
+*** Be sure to click inside the cell and select the text you want to copy, when transferring tags from a spreadsheet.
+*** If you don't, and select the cell to copy, applications may put extra quotation marks ("") around the tag.
+*** Which will then cause the tag to function incorrectly when placed on the publisher's webpage.
+***
+*** The publisher needs to insert device IDs into dc_rdid to enable in-app conversion tracking.
+*** Learn more at https://support.google.com/dcm/partner/answer/2826636#mobile.
+***
+*** The publisher can designate its playback method for each ad by using the dc_vpm parameter.
+*** Learn more at https://support.google.com/dcm/answer/2826636#10.
+**/
+
+// CONTRACT TEMPLATE
+module.exports =  {
+    ADVERTISER_ID /*-----*/: null,
+    ADVERTISER_NAME /*---*/: null,
+    SITE_ID /*-----------*/: null,
+    SITE_NAME /*---------*/: null,
+
+    CAMPAIGN_ID /*-------*/: null,
+    CAMPAIGN_NAME /*-----*/: null,
+    CAMPAIGN_START /*----*/: null,
+    CAMPAIGN_END /*------*/: null,
+
+    AD_ID /*-------------*/: null,
+    AD_NAME /*-----------*/: null,
+    AD_PROPERTY /*-------*/: null, // EX == 6115.Weather.com
+
+    PLACEMENT_ID /*------*/: null,
+    PLACEMENT_ID_EXT /*--*/: null,
+    PLACEMENT_NAME  /*---*/: null,
+    PLACEMENT_COMPATIBILITY: null,
+
+    CREATIVE_ID /*-------*/: null,
+    CREATIVE_NAME /*-----*/: null,
+    CREATIVE_DMX /*------*/: null,
+    CREATIVE_TAG_LEGEND: [
+       // '__STANDARD__', /*-------| ENABLED LINE == TRUE |-*/
+       // '__IMAGE__', /*----------| ENABLED LINE == TRUE |-*/
+       // '__IFRAME__', /*---------| ENABLED LINE == TRUE |-*/
+       // '__DCMAD__', /*----------| ENABLED LINE == TRUE |-*/
+       // '__REDIRECT_IMAGE__', /*-| ENABLED LINE == TRUE |-*/
+       // '__REDIRECT_CLICK__', /*-| ENABLED LINE == TRUE |-*/
+       // '__SCRIPT__', /*---------| ENABLED LINE == TRUE |-*/
+       // '__CLICK__', /*----------| ENABLED LINE == TRUE |-*/
+       // '__MOAT__', /*-----------| ENABLED LINE == TRUE |-*/
+    ],
+}

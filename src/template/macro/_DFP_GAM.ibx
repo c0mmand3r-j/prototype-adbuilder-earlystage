@@ -1,0 +1,19 @@
+/*-- DFP_GAM TEMPLATE --*/
+
+$$$.DATA.macros.DFP_GAM = {
+    cnd        :"%%PATTERN:cnd%%", // current condition.
+    dynght     :"%%PATTERN:dynght%%", // day or night? Possible values:'D', 'N'
+    height     :"%%HEIGHT%%", // ad slot height - according to inventory
+    width      :"%%WIDTH%%", // ad slot width - according to inventory
+    plat       : "%%PATTERN:plat%%", // platform. Used for tracking
+    timeframe  :"%%PATTERN:tf%%", // timeframe. Used for tracking
+    gamClick   :"%%CLICK_URL_UNESC%%", // Google Ad Manager click track URL
+    ord        :'%%CACHEBUSTER%%',
+    siteId     :'%%SITE%%',
+    gamPreview :'%%PREVIEW_MODE%%',
+    clk: "%%CLICK_URL_UNESC%%",
+    cid: "%ecid!", // creative id
+    lid: "%eaid!", // line item id
+    sid: '%%SITE%%',
+    zip: '%%PATTERN:zip%%',
+}

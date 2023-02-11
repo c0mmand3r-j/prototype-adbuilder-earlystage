@@ -1,0 +1,38 @@
+/**
+ * Build file for css
+ */
+
+module.exports = {
+    index: {
+        buffer: [
+            {
+                file: "sass/base/_variables.scss"
+            },
+            {
+                file: "sass/base/_helpers.scss"
+            },
+            {
+                file: "sass/element/_typography.scss"
+            },
+            {
+                file: "sass/html/_base.scss"
+            },
+            {
+                file: "sass/html/_header.scss"
+            },
+            {
+                file: "sass/html/_main.scss"
+            },
+            {
+                file: "sass/html/_footer.scss"
+            },
+            {
+                file: "sass/component/_component.scss"
+            },
+            {
+                file: "ibmad/" + process.env.IBM_PRODUCT + "/module.scss"
+            },
+        ],
+    }
+}
+

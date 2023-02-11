@@ -1,0 +1,57 @@
+/* =============================================================================
+   GLOBAL VARIABLES
+   ========================================================================== */
+:root {
+  /* Fonts */
+  --font-main: sans-serif;
+  --font-key: Georgia, 'Times New Roman' serif;
+
+  /* <hr> color */
+  --hr-color: #ccc;
+
+  /* Text selection background color */
+  --selection-color: #b3d4fc;
+
+  /* Text Color */
+  --main-color: #222;
+}
+/* =============================================================================
+   Mobile First Media
+   ========================================================================== */
+$media-mf-palm:   "only screen and (min-width: 480px)";
+$media-mf-tablet: "only screen and (min-width: 768px)";
+$media-mf-desk:   "only screen and (min-width: 1024px)";
+$media-mf-wide:   "only screen and (min-width: 1200px)";
+/* =============================================================================
+   Desktop First Media
+   ========================================================================== */
+$media-df-palm:   "only screen and (max-width: 479px)";
+$media-df-tablet: "only screen and (max-width: 767px)";
+$media-df-desk:   "only screen and (max-width: 1023px)";
+$media-df-wide:   "only screen and (max-width: 1199px)";
+/* =============================================================================
+   Mixed Media
+   ========================================================================== */
+$media-palm-tablet: "only screen and (min-width: 480px) and (max-width: 767px)";
+$media-tablet-desk: "only screen and (min-width: 768px) and (max-width: 1023px)";
+$media-desk-wide:   "only screen and (min-width: 1024px) and (max-width: 1199px)";
+/* =============================================================================
+   Mixins
+   ========================================================================== */
+@mixin scroll() {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+@mixin ellipsis() {
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+/* =============================================================================
+   Viewport support
+   ========================================================================== */
+/* -- Adds proper device viewport widths -- */
+@-ms-viewport {width: device-width;}
+@-o-viewport {width: device-width;}
+@viewport {width: device-width;}

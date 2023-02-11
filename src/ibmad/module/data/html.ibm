@@ -1,0 +1,25 @@
+/**
+ * Build config for html file
+ */
+
+module.exports = {
+    index: {
+        buffer: [
+            {
+                file: "template/html/_header.ibx"
+            },
+            {
+                file: "template/html/_main.ibx"
+            },
+            {
+                file: "ibmad/" + process.env.IBM_PRODUCT + "/module.html"
+            },
+            {
+                file: "template/html/_ibmad.ibx"
+            },
+            {
+                file: "template/html/_footer.ibx"
+            }
+        ]
+    }
+}

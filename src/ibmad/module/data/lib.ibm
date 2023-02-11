@@ -1,0 +1,12 @@
+/**
+ * Build config for js file
+ */
+module.exports = {
+	index: {
+		buffer: [
+			{
+				file: "lib/matches.polyfill.js"
+			},
+		]
+	}
+}

@@ -1,0 +1,25 @@
+/**
+ * Build config for js file
+ */
+
+module.exports = {
+	index: {
+		buffer: [
+			{
+				file: "template/js/_head.ibx"
+			},
+            // {
+            //     file: "ibmad/" + process.env.IBM_PRODUCT + "/module.js"
+            // },
+			{
+				file: "js/plugins/_tracking.js"
+			},
+			{
+				file: "js/plugins/_console.js"
+			},
+			{
+				file: "template/js/_tail.ibx"
+			},
+		]
+	}
+}
